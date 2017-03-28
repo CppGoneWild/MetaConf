@@ -45,6 +45,7 @@ struct Vector : public Vector<T, SIZE - 1>
 	Vector<T, SIZE> getNormed() const;
 };
 
+
 template <class T>
 struct Vector<T, 1>
 {
@@ -85,18 +86,19 @@ struct Vector<T, 1>
 
 
 
-
 template <class T, std::size_t SIZE>
 struct Printer
 {
 	static void print(std::ostream &, Vector<T, SIZE> const &);
 };
 
+
 template <class T>
 struct Printer<T, 1>
 {
 	static void print(std::ostream &, Vector<T, 1> const &);
 };
+
 
 template <class T, std::size_t SIZE>
 std::ostream & operator<<(std::ostream & os, Vector<T, SIZE> const & v);

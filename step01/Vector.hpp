@@ -30,8 +30,6 @@ struct Vector<T, 1>
 };
 
 
-
-
 template <class T, std::size_t SIZE>
 struct Printer
 {
@@ -43,6 +41,7 @@ struct Printer<T, 1>
 {
 	static void print(std::ostream &, Vector<T, 1> const &);
 };
+
 
 template <class T, std::size_t SIZE>
 std::ostream & operator<<(std::ostream & os, Vector<T, SIZE> const & v);

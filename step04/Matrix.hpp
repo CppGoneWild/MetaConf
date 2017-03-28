@@ -1,7 +1,9 @@
 #ifndef MATRIX_HPP
 #define MATRIX_HPP
 
+
 #include "Vector.hpp"
+
 
 template <class T, std::size_t SIZE, std::size_t... ARGS>
 struct Matrix
@@ -37,7 +39,6 @@ struct Matrix
 };
 
 
-
 template <class T, std::size_t SIZE>
 struct Matrix<T, SIZE>
 {
@@ -70,9 +71,6 @@ struct Matrix<T, SIZE>
 	template <class U> Matrix<T, SIZE> operator/(U const &) const;
 	template <class U> Matrix<T, SIZE> operator%(U const &) const;
 };
-
-
-
 
 
 template <class T, std::size_t SIZE, std::size_t... ARGS>
