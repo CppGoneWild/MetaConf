@@ -1,13 +1,13 @@
 template<class T, std::size_t SIZE, class FINAL>
 Vector<T, SIZE, FINAL>::Vector(FINAL const & value)
-: Vector<T, SIZE - 1>(value),
+: Vector<T, SIZE - 1, FINAL>(value),
   value(value)
 {}
 
 template<class T, std::size_t SIZE, class FINAL>
 template<class U, class FINAL_U>
 Vector<T, SIZE, FINAL>::Vector(Vector<U, SIZE, FINAL_U> const & other)
-: Vector<T, SIZE - 1>(other),
+: Vector<T, SIZE - 1, FINAL>(other),
   value(other.value)
 {}
 
