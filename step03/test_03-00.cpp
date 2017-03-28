@@ -12,12 +12,14 @@ int main(int, char **)
   std::cout << "v - 42 " << v - 42 << std::endl;
   std::cout << "v * 42 " << v * 42 << std::endl;
   std::cout << "v / 3  " << v / 3 << std::endl;
+  std::cout << "v / 3  " << v % 3 << std::endl;
 
 	std::cout << "v2     " << v2 << std::endl;
   std::cout << "v2 + v " << v2 + v << std::endl;
   std::cout << "v2 - v " << v2 - v << std::endl;
   std::cout << "v2 * v " << v2 * v << std::endl;
   std::cout << "v2 / v " << v2 / v << std::endl;
+  std::cout << "v2 % v  " << v2 % v << std::endl;
 
 	return (0);
 }
